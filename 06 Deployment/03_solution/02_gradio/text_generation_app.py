@@ -45,7 +45,7 @@ def generate(api_key: str, api_secret: str, prompt: str, history: list[ChatMessa
 with gr.Blocks() as demo:
     gr.Markdown("# This is a heavily amazing Gradio app connecting with FastAPI")
     chatbot = gr.Chatbot(
-        type="messages",
+        
     )
     inp_key = gr.Textbox(
         lines=1, label="API Key", placeholder="Enter your API key here"
